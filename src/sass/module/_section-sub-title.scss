@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.section-sub-title {
+  font-family: $noto-sans-font-family;
+  display: block;
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1;
+  color: $green;
+}
+
+.section-sub-title.section-sub-title--white {
+  @include mq("md") {
+    color: $white;
+  }
+}

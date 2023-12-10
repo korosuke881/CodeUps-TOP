@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.top-blog {
+  @include mq("md") {
+    background: linear-gradient(to bottom, transparent 60.5%, white 60%),url("../images/common/top-blog-bg.jpg");
+    background-size: cover;
+    padding-top: rem(100);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.top-blog__inner {
+  position: relative;
+  @include mq("md") {
+    padding-left: rem(33);
+    padding-right: rem(33);
+  }
+}
+
+.top-blog__inner::after {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    width: rem(431);
+    height: rem(200);
+    left: calc(53% - min(48vw, rem(650)));
+    top: rem(-75);
+    background: url(../images/common/top-blog-ashirai.svg) center center / contain no-repeat;
+  }
+}
+
+.top-blog__title-wrap {
+  text-align: center;
+}
+
+.top-blog__sub-title {
+  margin-top: rem(12);
+}
+
+.top-blog__cards {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(87);
+  }
+}
+
+.top-blog__button {
+  text-align: center;
+  margin-top: rem(37);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

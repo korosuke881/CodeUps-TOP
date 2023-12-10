@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.top-voice__inner {
+  position: relative;
+  padding-left: rem(15);
+   padding-right: rem(15);
+  @include mq("md") {
+    padding-left: rem(34);
+    padding-right: rem(34);
+  }
+}
+
+.top-voice__inner::before {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    width: rem(308);
+    height: rem(138);
+    left: calc(52% - min(48vw, rem(650)));
+    top: rem(-118);
+    background: url(../images/common/top-voice-ashirai-fish.svg) center center / contain no-repeat;
+  }
+}
+
+.top-voice__inner::after {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    width: rem(78);
+    height: rem(162);
+    right: rem(25);
+    bottom: rem(-70);
+    background: url(../images/common/top-voice-ashirai-tatunootosigo.svg) center center / contain no-repeat;
+  }
+}
+
+.top-voice__title-wrap {
+  text-align: center;
+}
+
+.top-voice__sub-title {
+  margin-top: rem(13);
+}
+
+.top-voice__cards {
+  margin-top: rem(50);
+  @include mq("md") {
+    margin-top: rem(35);
+  }
+}
+
+.top-voice__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

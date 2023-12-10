@@ -1,0 +1,34 @@
+@use "global" as *;
+.section-title {
+  font-family: $base-font-family;
+  display: block;
+  font-size: rem(32);
+  font-weight: $regular;
+  line-height: 1;
+  color: $black;
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}
+
+.section-title::first-letter {
+  color: $green;
+  text-transform: uppercase;
+}
+
+.section-title.section-title--first-letter-blue::first-letter {
+  color: $blue;
+  text-transform: uppercase;
+}
+
+.section-title.section-title--first-letter-blue.section-title--white {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+
+
+.section-title.section-title--large {
+  font-size: rem(80);
+}

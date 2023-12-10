@@ -1,0 +1,34 @@
+@use "global" as *;
+
+// swiperの矢印ボタンのスタイル調整
+.swiper-button-prev,
+.swiper-button-next {
+  width: auto;
+  height: auto;
+  background: none;
+  position: static;
+}
+
+// 矢印カスタマイズ
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+  @include mq("md") {
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: rem(80);
+    width: rem(80);
+  }
+}
+
+// 前への矢印のカスタマイズ
+.swiper-button-prev:after {
+  background-image: url(../images/common/swiper-prev-button.svg);
+}
+
+// 次への矢印のカスタマイズ
+.swiper-button-next:after {
+  background-image: url(../images/common/swiper-next-button.svg);
+}

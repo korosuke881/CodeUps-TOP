@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.menu-title {
+  color: $white;
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: calc(18 / 16);
+  position: relative;
+}
+
+.menu-title:before {
+  position: absolute;
+  z-index: 100;
+  content: "";
+  width: rem(18);
+  height: rem(18);
+  left: rem(-22);
+  top: rem(14);
+  background: url(../images/common/drawer-menu-title-hitode.svg);
+
+}
+

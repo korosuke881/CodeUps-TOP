@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.image-animation-section .animated-image {
+  /* transitionプロパティを削除するか、必要なら調整する */
+  opacity: 0; /* 最初は画像を見えなくする */
+  transform: translateY(100%); /* 画像を下に隠す */
+}
+
+.image-animation-section .animated-title {
+  /* transitionプロパティを削除するか、必要なら調整する */
+  opacity: 0; /* タイトルを最初は透明にする */
+}
