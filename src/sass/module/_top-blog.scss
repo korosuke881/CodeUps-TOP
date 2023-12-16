@@ -12,10 +12,6 @@
 
 .top-blog__inner {
   position: relative;
-  @include mq("md") {
-    padding-left: rem(33);
-    padding-right: rem(33);
-  }
 }
 
 .top-blog__inner::after {

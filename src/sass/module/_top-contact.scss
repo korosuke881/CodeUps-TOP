@@ -4,11 +4,6 @@
   position: relative;
   padding-left: rem(38.4);
   padding-right: rem(38.4);
-  
-  @include mq("md") {
-    padding-left: rem(34);
-    padding-right: rem(34);
-  }
 }
 
 .top-contact__inner::after {

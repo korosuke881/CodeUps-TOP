@@ -30,8 +30,7 @@
   top: 32%;
 }
 
-.top-campaign__swiper-container {
-  padding-left: rem(15);
+.top-campaign__swiper-container {  
   max-width: clamp(rem(1275), calc(rem(1275) + (100vw - rem(1440)) * 0.5), rem(2000));
   width: 100%;
   margin-left: auto;
