@@ -1,12 +1,24 @@
 @use "global" as *;
 
 .top-blog {
+  position: relative;
+  padding-top: rem(100);                   
+}
+
+.top-blog::before{
   @include mq("md") {
-    background: linear-gradient(to bottom, transparent 60.5%, white 60%),url("../images/common/top-blog-bg.jpg");
-    background-size: cover;
-    padding-top: rem(100);
+    background: url("../images/common/top-blog-bg.jpg");
+    background-size: cover;    
     background-repeat: no-repeat;
     background-position: center center;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 500px;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 }
 

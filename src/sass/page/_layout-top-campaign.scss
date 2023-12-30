@@ -2,6 +2,7 @@
 
 .layout-top-campaign {
   margin-top: rem(45);
+  overflow: hidden;
   @include mq("md") {
     margin-top: rem(120);
   }
